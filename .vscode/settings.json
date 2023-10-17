@@ -30,5 +30,11 @@
     },
     "clangd.arguments": [
         "--header-insertion=never"
-    ]
+    ],
+    "workbench.colorCustomizations": {
+        "[Material Theme]": {},
+        "activityBar.background": "#322E0A",
+        "titleBar.activeBackground": "#46400E",
+        "titleBar.activeForeground": "#FCFAEE"
+    }
 }

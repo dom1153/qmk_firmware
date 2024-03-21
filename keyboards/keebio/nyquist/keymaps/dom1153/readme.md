@@ -4,13 +4,25 @@
 
 # Compile QMK firmware
 
-`qmk compile -kb keebio/nyquist/rev3 -km dom1153`
+`qmk compile -kb keebio/nyquist/rev3 -km dom1153 --compiledb`
 
-## Setup VS Code
-
-`qmk generate-compilation-database -kb keebio/nyquist/rev3 -km dom1153`
+`--compiledb` should let clang do most the work
 
 Will generate `compile_commands.json` at root.
+
+# More on vscode
+
+```
+CompileFlags:
+  Add: [-Wno-unknown-attributes, -Wno-maybe-uninitialized, -Wno-unknown-warning-option]
+  Remove: [-W*, -mcall-prologues, -m*, -f*]
+  Compiler: clang
+Diagnostics:
+  UnusedIncludes: None
+  Suppress: pp_hash_error
+```
+
+`UnusedIncludes` should suppress some warnings as well as `-m*` and 
 
 # Notes
 
@@ -47,3 +59,7 @@ https://github.com/qmk/qmk_firmware/blob/master/docs/feature_rgblight.md
 ## RGB custom code (rgb usb sleep and timeout)
 
 [Link to docs](../../../../../docs/custom_quantum_functions.md)
+
+## Clangd suppression
+
+[Docs](https://clangd.llvm.org/config.html#suppress)

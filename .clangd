@@ -1,4 +1,7 @@
 CompileFlags:
   Add: [-Wno-unknown-attributes, -Wno-maybe-uninitialized, -Wno-unknown-warning-option]
-  Remove: [-W*, -mcall-prologues]
+  Remove: [-W*, -mcall-prologues, -m*, -f*]
   Compiler: clang
+Diagnostics:
+  UnusedIncludes: None
+  Suppress: pp_hash_error

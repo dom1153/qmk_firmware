@@ -63,7 +63,6 @@ CMakeLists.txt
 *.pdf
 
 # Let these ones be user specific, since we have so many different configurations
-*.code-workspace
 .stfolder
 .tags
 .vscode/c_cpp_properties.json

@@ -1,0 +1,37 @@
+{
+    "folders": [
+        {
+            "path": ".",
+            "name": "qmk_firmware (root)"
+        },
+        {
+            "path": "./keyboards/keebio/nyquist",
+            "name": "nyquist (home)"
+        },
+        {
+            "path": "./keyboards/keebio/nyquist/keymaps/dom1153",
+            "name": "nyquist keymap (dom1153)"
+        },
+        {
+            "path": "./docs",
+            "name": "repo docs"
+        }
+    ],
+    "settings": {
+        "files.associations": {
+            "*.h": "c",
+            "*.c": "c",
+            "*.inc": "c",
+            "*.cpp": "cpp",
+            "*.hpp": "cpp",
+            "xstddef": "c",
+            "type_traits": "c",
+            "utility": "c",
+            "ranges": "c"
+        },
+        "clangd.arguments": [
+            "--header-insertion=never"
+        ],
+        "nixEnvSelector.nixFile": "${workspaceFolder}/shell.nix"
+    }
+}

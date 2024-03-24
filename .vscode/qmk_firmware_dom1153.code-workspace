@@ -1,19 +1,19 @@
 {
     "folders": [
         {
-            "path": ".",
+            "path": "..",
             "name": "qmk_firmware (root)"
         },
         {
-            "path": "./keyboards/keebio/nyquist",
+            "path": "../keyboards/keebio/nyquist",
             "name": "nyquist (home)"
         },
         {
-            "path": "./keyboards/keebio/nyquist/keymaps/dom1153",
+            "path": "../keyboards/keebio/nyquist/keymaps/dom1153",
             "name": "nyquist keymap (dom1153)"
         },
         {
-            "path": "./docs",
+            "path": "../docs",
             "name": "repo docs"
         }
     ],

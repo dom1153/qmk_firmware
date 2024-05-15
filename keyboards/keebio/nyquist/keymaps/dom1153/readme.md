@@ -22,7 +22,7 @@ Diagnostics:
   Suppress: pp_hash_error
 ```
 
-`UnusedIncludes` should suppress some warnings as well as `-m*` and 
+`UnusedIncludes` should suppress some warnings as well as `-m*` and
 
 # Notes
 
@@ -30,9 +30,11 @@ Diagnostics:
 
 -   'Backlights' are controlled from `RGBLIGHT_ENABLE`, not `BACKLIGHT_ENABLE`
 
--   Reset switch works, OR reset switch between the main usb c port
+-   Reset qmk key works, OR reset switch between the main usb c port
 
 -   Flashing both sides if in doubt. No need to config/define left/right sides.
+
+-   If using a nix environment, run all shell commands (including editor) with `nix-shell`
 
 # Settings
 
